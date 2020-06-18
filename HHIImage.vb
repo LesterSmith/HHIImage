@@ -93,29 +93,30 @@ Public Class HHIImage
 
 #End Region
 
-   Private Sub Timer1_Tick(ByVal sender As Object, _
-      ByVal e As System.EventArgs) Handles Timer1.Tick
-      Select Case True
-         Case Me.picSpin0.Visible
-            picSpin1.Visible = True
-            picSpin2.Visible = False
-            picSpin3.Visible = False
-            picSpin0.Visible = False
-         Case picSpin1.Visible
-            picSpin1.Visible = False
-            picSpin2.Visible = True
-            picSpin3.Visible = False
-            picSpin0.Visible = False
-         Case picSpin2.Visible
-            picSpin1.Visible = False
-            picSpin2.Visible = False
-            picSpin3.Visible = True
-            picSpin0.Visible = False
-         Case picSpin3.Visible
-            picSpin1.Visible = False
-            picSpin2.Visible = False
-            picSpin3.Visible = False
-            picSpin0.Visible = True
-      End Select
-   End Sub
+    Private Sub Timer1_Tick(ByVal sender As Object,
+       ByVal e As System.EventArgs) Handles Timer1.Tick
+
+        Select Case True
+            Case Me.picSpin0.Visible
+                picSpin1.Visible = True
+                picSpin2.Visible = False
+                picSpin3.Visible = False
+                picSpin0.Visible = False
+            Case picSpin1.Visible
+                picSpin1.Visible = False
+                picSpin2.Visible = True
+                picSpin3.Visible = False
+                picSpin0.Visible = False
+            Case picSpin2.Visible
+                picSpin1.Visible = False
+                picSpin2.Visible = False
+                picSpin3.Visible = True
+                picSpin0.Visible = False
+            Case picSpin3.Visible
+                picSpin1.Visible = False
+                picSpin2.Visible = False
+                picSpin3.Visible = False
+                picSpin0.Visible = True
+        End Select
+    End Sub
 End Class
